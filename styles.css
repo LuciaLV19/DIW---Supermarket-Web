@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* =========================
+   index.html: HEADER
+========================= */
+.site-header {
+  width: 100%;
+  height: 80px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Enlaces de navegación */
+.main-nav a {
+  font-family: 'Alegreya Sans', sans-serif;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Enlaces de navegación al pasar el mouse*/
+.main-nav a:hover {
+  color: #c21c1c;
+}
+
+/* Numero de productos en el carrito de compras */
+.cart-count {
+  background-color: #c21c1c;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+/* Logo Web */
+.WebLogo {
+  width: 55px;
+  height: auto;
+  cursor: pointer;
+}
+
+/*Imagen principal*/
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   index.html: CATEGORÍAS
+========================= */
+#categories {
+  text-align: center;
+  padding: 50px 70px;
+  scroll-margin-top: 80px;
+}
+
+/* Títulos de las secciones */
+#categories h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de las tarjetas de categorias */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 0 40px;
+}
+
+/* Tarjetas de las categorias */
+.card {
+  background: linear-gradient(to bottom, #7a0000, #d62020);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Tarjetas de las categorias al pasar el mouse */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Imagen de las tarjetas de las categorias */
+.card-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cuerpo de las tarjetas de las categorias */
+.card-body {
+  padding: 15px;
+}
+
+/* Títulos de las tarjetas de las categorias */
+.card-body h3 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+/* =========================
+   index.html: DESTACADOS
+========================= */
+#featured {
+  margin-top: 50px;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+/* Títulos de las secciones */
+#featured h2 {
+  text-align: center;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 2rem;
+  padding: 18px 0;
+  color: white;
+  background: linear-gradient(to right, #7a0000, #d62020);
+}
+
+/* Mensaje para llamar la atención en la sección destacados */
+.offer {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+/* Contenedor de las 2 tarjetas destacadas */
+.featured-grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px 70px;
+  gap: 40px;
+}
+
+/* Cuerpo de las tarjetas destacadas */
+.featured-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  border: 6px double #ff4221;
+  box-shadow: 0 5px 20px rgba(255, 87, 51, 0.7);
+  border-radius: 10px;
+  width: 75%;
+  max-width: 450px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+/* Títulos de las tarjetas destacadas */
+.product-title {
+  font-size: 1.8em;
+  padding: 0 20px;
+}
+
+/* Enlaces de las tarjetas destacadas */
+.featured-item-link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Imagenes de las tarjetas destacadas */
+.featured-images {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem 0 1rem;
+}
+
+/* Unidad del precio de los productos destacados */
+.ud {
+  font-size: 1.5em;
+  color: #e63946;
+  font-weight: 900;
+}
+
+/* Tarjetas destacadas al pasar el mouse */
+.featured-item:hover {
+  transform: scale(1.04);
+}
+
+/* Precios de oferta de los productos destacados */
+.current-price {
+  font-size: 2em;
+  color: #e63946;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Precios antiguos de los productos destacados */
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+/* Etiquetta "Oferta" de los productos destacados */
+.offer-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 800;
+  font-size: 0.9em;
+  background-color: #ff4500;
+  z-index: 10;
+}
+
+/* =========================
+   index.html: FOOTER
+========================= */
+.site-footer {
+  margin-top: 50px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, #000000, #7a0000, #d62020, #fdc4c4);
+}
+
+/* =========================
+   index.html: RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  #categories {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .card-img {
+    height: 150px;
+  }
+
+  .main-nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+
+  .site-header {
+    padding: 10px 20px;
+  }
+}
+
+/* =========================
+   producto-detalle-....html: BREADCRUMBS (RUTA)
+========================= */
+.breadcrumbs-bar {
+  background: linear-gradient(to right, #7a0000, #d62020);
+  color: white;
+  padding: 10px 40px;
+  font-size: 0.95em;
+}
+
+/* Enlaces de la ruta */
+.breadcrumbs-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Enlaces de la ruta al pasar el mouse */
+.breadcrumbs-bar a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   producto-detalle-....html: SECCIÓN PRINCIPAL DEL PRODUCTO
+========================= */
+.product-detail-main {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Sección principal del producto*/
+.product-detail-container {
+  display: flex;
+  gap: 40px;
+}
+
+/* =========================
+   producto-detalle-....html: 1. COLUMNA DE IMAGENES DEL PRODUCTO
+========================= */
+.product-images {
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+/* Imagen Principal */
+.image-main {
+  flex-grow: 1;
+  height: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  min-width: 310px;
+  max-width: 400px;
+}
+
+/* Cuadricula de miniaturas */
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 5px;
+  width: 100px;
+}
+
+/* Miniaturas individuales*/
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  /* Altura fija para las miniaturas */
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  border: solid 1px transparent;
+}
+
+/* Estilo para la miniatura al pasar el mouse */
+.thumbnail:hover {
+  opacity: 1;
+  border: 2px solid #e63946;
+}
+
+/* Estilo para la miniatura activa */
+.thumbnail.active {
+  opacity: 1;
+  border: 2px solid #e63946;
+}
+
+/* =========================
+   producto-detalle-....html: 2. COLUMNA DE INFORMACIÓN DEL PRODUCTO
+========================= */
+.product-info {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Nombre del producto */
+.product-title-detail {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+/* Etiquetas (Precio del producto, Valoración del producto) */
+.price-rating-group {
+  margin: 0 20px 20px 0;
+  text-align: end;
+}
+
+/* Texto de la valoración */
+.rating-label {
+  display: block;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+/* Estrellas de la valoración */
+.rating {
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Descripción */
+.description {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Texto de la Descripción */
+.description-text {
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Opciones para la Compra (Botón de Compra y Cantidad) */
+.purchase-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/*Texto "Cantidad" */
+.quantity-div label {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* Input de Cantidad */
+.quantity-input {
+  padding: 8px;
+  width: 50px;
+  font-size: 1em;
+  border: 1px solid #979797;
+  border-radius: 5px;
+}
+
+/* Botón de Compra */
+.add-to-cart-btn {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Estilo del Botón de Compra al pasar el mouse */
+.add-to-cart-btn:hover {
+  background-color: #a01d2a;
+}
+
+/* =========================
+   producto-detalle-....html: RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .product-detail-container {
+    flex-direction: column;
+  }
+
+  .image-main {
+    width: 70%;
+  }
+
+  .thumbnail-grid {
+    width: 20%;
+    max-width: 30%;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .product-images,
+  .product-info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -10px;
+  }
+  .description, .description-text, .product-title-detail{
+    text-align: left;
+  }
+  .purchase-options{
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .product-detail-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product-title-detail {
+    font-size: 1.6em;
+  }
+
+  .image-main {
+    min-width: 310px;
+  }
+
+  .product-title-detail,
+  .product-description-text {
+    overflow-wrap: break-word;
+  }
+
+  /* Opciones de Compra: Botón y cantidad uno debajo del otro */
+  .purchase-options {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .quantity-input {
+    width: 100%;
+  }
+}

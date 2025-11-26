@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Supermarket</title>
+    <link rel="icon" type="image/png" href="source/WebLogo.png">
+    <script src="main.js" defer></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&family=League+Spartan:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html"><img src="source/WebLogo.png" class="WebLogo" alt="Logo Web"></a>
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="#categories">Categorías</a>
+            <a href="#featured">Ofertas</a>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Carrito</a><span class="cart-count">0</span>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="source/MainImage.png" alt="Imagen principal" />
+        </div>
+        <section id="categories">
+            <h2>Explora nuestras categorías</h2>
+            <div id="cards">
+                <div class="card">
+                    <div class="card-img" data-img="FruitCategories.png"></div>
+                    <div class="card-body">
+                        <h3>Frutas</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" data-img="DrinksCategories.png"></div>
+                    <div class="card-body">
+                        <h3>Bebidas</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" data-img="CleanerCategories.png"></div>
+                    <div class="card-body">
+                        <h3>Limpieza</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" data-img="DairyCategories.png"></div>
+                    <div class="card-body">
+                        <h3>Lácteos</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" data-img="MealsCategories.png"></div>
+                    <div class="card-body">
+                        <h3>Carnes</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img" data-img="BreadCategories.png"></div>
+                    <div class="card-body">
+                        <h3>Panadería</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>DESTACADOS</h2>
+            <h3 class="offer">Ofertas de la semana &nbsp; ¡No te las pierdas!</h3>
+            <div class="featured-grid">
+                
+                <div class="featured-item"><a class="featured-item-link" href="producto-detalle-leche.html">
+                    <img src="source/MilkAsturiana.png" class="featured-images" alt="Producto destacado 1">
+                    <span class="offer-badge">¡Oferta Limitada!</span>
+                    <div class="item-info">
+                        <h3 class="product-title">PACK AHORRO LECHE ENTERA 6x1'5L</h3>
+                        <span class="old-price">7.50 €</span>
+                        <span class="current-price">5.99 €</span>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="featured-item"><a class="featured-item-link" href="producto-detalle-aguacate.html">
+                    <img src="source/Avocado.png" class="featured-images" alt="Producto destacado 2" >
+                    <span class="offer-badge">¡Oferta Limitada!</span>
+                    <div class="item-info">
+                        <h3 class="product-title">AGUACATE HASS - FRESCURA GARANTIZADA</h3>
+                        <span class="current-price">1.49 € </span><span class="ud">/ Ud.</span>
+                    </div>
+                   </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>supermarketdaily.com</p>
+        <a href="index.html"><img src="source/WebLogo.png" class="WebLogo" alt="Logo Web"></a>
+        <p>123-456-789</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguacate Hass Fresco | Mi Supermercado</title>
+    <link rel="icon" type="image/png" href="source/WebLogo.png">
+    <script src="main.js" defer></script>
+     <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&family=League+Spartan:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html"><img src="source/WebLogo.png" class="WebLogo" alt="Logo Web"></a>
+        <nav class="main-nav">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#categories">Categorías</a>
+            <a href="index.html#featured">Ofertas</a>
+            <a href="#">Mi cuenta</a>
+            <a href="#">Carrito</a><span class="cart-count">0</span>
+
+        </nav>
+    </header>
+
+    <div class="breadcrumbs-bar">
+        <a href="index.html"> &lt; Volver a la página principal</a> / <a href="#">Frutas</a> / Aguacate Hass Fresco
+    </div>
+
+    <main class="product-detail-main">
+        <section class="product-detail-container">
+
+            <div class="product-images">
+                <div class="thumbnail-grid">
+                    <img src="source/Avocado.png" alt="Vista Principal Aguacate Hass Fresco" class="thumbnail active">
+                    <img src="source/AvocadoContainer.png" alt="Vista lateral" class="thumbnail">
+                    <img src="source/AvocadoClose.png" alt="Vista ingredientes" class="thumbnail">
+                </div>
+                <img src="source/Avocado.png" alt="Aguacate Hass Fresco" class="image-main">
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title-detail">Aguacate Hass Fresco</h1>
+
+                <div class="price-rating-group">
+                    <span class="current-price">1.49 € / Ud.</span>
+                </div>
+
+                <div class="price-rating-group">
+                    <span class="rating-label">Valoración del producto</span>
+                    <span class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</span>
+                </div>
+
+                <h2 class="description">Descripción del producto:</h2>
+                <p class="description-text">
+                    Aguacates Hass de origen local, cosechados en su punto óptimo. Textura cremosa y sabor excelente.
+                    Ricos en grasas saludables.
+                </p>
+
+                <div class="purchase-options">
+                    <div class="quantity-div">
+                        <label for="quantity">Cantidad:</label>
+                        <input type="number" id="quantity-avocado" value="1" min="1" class="quantity-input">
+                    </div>
+                    <button class="add-to-cart-btn">Añadir al carrito 🛒</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>supermarketdaily.com</p>
+        <a href="index.html"><img src="source/WebLogo.png" class="WebLogo" alt="Logo Web"></a>
+        <p>123-456-789</p>
+    </footer>
+</body>
+
+</html>
